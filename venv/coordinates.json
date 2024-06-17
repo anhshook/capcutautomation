@@ -1,0 +1,5 @@
+{
+  "text_icon": {"x": 160, "y": 70},
+  "generate_button": {"x": 820, "y": 570},
+  "export_button": {"x": 1400, "y": 100}
+}
