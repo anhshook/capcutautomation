@@ -8,9 +8,9 @@ pyautogui.FAILSAFE = False
 
 # Log positions to avoid repeating incorrect positions
 positions = {
-    "text_icon": {"x": 160, "y": 70},
-    "auto_captions_button": {"x": 80, "y": 280},  # Moved significantly further up
-    "generate_button": {"x": 820, "y": 570}
+    "text_icon": {"x": 160, "y": 80},
+    "auto_captions_button": {"x": 45, "y": 320},  # Moved significantly further up
+    "generate_button": {"x": 690, "y": 610}
 }
 
 
@@ -71,11 +71,11 @@ def drag_all_clips_to_timeline():
     bring_capcut_to_foreground()
 
     # Ensure the clips are selected in CapCut
-    pyautogui.click(x=200, y=200)  # Adjust to where the clips are located
+    pyautogui.click(x=190, y=250)  # Adjust to where the clips are located
     time.sleep(1)
 
     # Drag the files to the timeline
-    pyautogui.mouseDown(button='left', x=200, y=200)  # Adjust coordinates to the initial clip location
+    pyautogui.mouseDown(button='left', x=190, y=250)  # Adjust coordinates to the initial clip location
     time.sleep(1)
     pyautogui.moveTo(300, y=800, duration=2)  # Adjust to the timeline area in CapCut
     pyautogui.mouseUp(button='left')
